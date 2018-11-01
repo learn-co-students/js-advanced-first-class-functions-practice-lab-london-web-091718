@@ -26,6 +26,11 @@ const driversByName = function (drivers) {
     return driverOne.name.localeCompare(driverTwo.name);
   });
 };
+// function driversByName(drivers){
+//     return [...drivers].sort((a, b) => {
+//         return (a.name).localeCompare(b.name);
+//     })
+// }
 
 const totalRevenue = function (drivers) {
   return drivers.reduce(function (total, currentDriver) {
@@ -36,3 +41,16 @@ const totalRevenue = function (drivers) {
 const averageRevenue = function (drivers) {
   return totalRevenue(drivers) / drivers.length;
 };
+//
+// function driversByRevenue(drivers) {
+//   return [...drivers].sort((d1, d2) => d1.revenue - d2.revenue);
+// }
+//  function driversByName(drivers) {
+//   return [...drivers].sort((d1, d2) => d1.name.localeCompare(d2.name));
+// }
+//  function totalRevenue(drivers) {
+//   return drivers.reduce((total, currentDriver) => currentDriver.revenue + total, 0);
+// }
+//  function averageRevenue(drivers) {
+//   return totalRevenue(drivers) / drivers.length;
+// }
